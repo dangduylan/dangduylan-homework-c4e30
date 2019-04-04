@@ -31,7 +31,7 @@ quiz = [
     {
      'start': 'Estimate this answer (exact calculation not needed):',
      'q': 'Jack scored these marks in 5 math tests: 49, 81, 72, 66 and 52. What is the mean',
-     'a': '1. About 55 \nAbout 65 \nAbout 75 \nAbout 85',
+     'a': '1. About 55 \n2. About 65 \n3. About 75 \n4. About 85',
      'true_answer': 2
      }
 ]
