@@ -25,16 +25,6 @@ def bmi(weight,height):
         'height': int(height),
         'bmi': int(weight)/((int(height)/100)**2)
     }
-    if your_body['bmi'] < 16:
-        your_body['condition']='You are severely underweight'
-    elif 16 <= your_body['bmi'] < 18.5:
-        your_body['condition']='You are underweight'
-    elif 18.5 <= your_body['bmi'] < 25:
-        your_body['condition']='You are normal'
-    elif 25 <= your_body['bmi'] < 30:
-        your_body['condition']='You are overweight'
-    else:
-        your_body['condition']='You are obese'
     return render_template('bmi.html',data=your_body)
 
 if __name__ == '__main__':

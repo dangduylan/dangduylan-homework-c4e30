@@ -1,7 +1,21 @@
 <h1>BMI Calculator - Body Mass Index</h1>
-Your height(cm): {{data.height}}
+
+Your height (cm): {{data.height}}
 <br>
-Your weight(kg): {{data.weight}}
+Your weight (kg): {{data.weight}}
 <br>
 Your BMI: {{data.bmi}}
-<p><strong>{{data.condition}}</strong></p>
+
+<p><strong>
+{% if data.bmi < 16: %}
+    You are severely underweight
+{% elif 16 <= data.bmi < 18.5: %}
+    You are underweight
+{% elif 18.5 <= data.bmi < 25: %}
+    You are normal
+{% elif 25 <= data.bmi < 30: %}
+    You are overweight
+{% else: %}
+    You are obese
+{%endif%}
+<strong></p>
