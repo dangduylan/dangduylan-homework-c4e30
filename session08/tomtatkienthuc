@@ -1,0 +1,7 @@
+Web
+- làm web bằng flask
+- sử dụng render_template với html
+- sử dụng jinja để thực hiện các cấu trúc điều khuyển trong html
+- 2 phương thức GET, POST
+- lấy các giá trị đã POST bằng request
+- tạo form, table
