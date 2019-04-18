@@ -12,11 +12,14 @@ accounts = [
 
 @app.route('/',methods = ["POST"])
 def login():
+    check = False
     for user in accounts:
         if request.form.get('username') == user['username'] and request.form.get('password') == user['password']:
-           return 'Login Successful!'
-        else:
-            return 'Login Failed!'
+           check = True
+    if check == True:
+        return "Login Successful!"
+    else:
+        return "Login Failed!"
 @app.route('/')
 def get():  
     return render_template('users.html')
